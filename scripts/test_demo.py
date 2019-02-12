@@ -12,7 +12,7 @@ class Test_allure:
     @allure.severity(allure.severity_level.CRITICAL)
     # @allure.severity("critical")
     def test_fun1(self):
-        allure.attach('描述', '我是测试步骤001111的描述～～～')
+        allure.attach('描述', '我是测试步骤00111的描述～～～')
         assert 1
 
     @allure.step(title="步骤二")
