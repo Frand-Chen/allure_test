@@ -9,7 +9,8 @@ class Test_allure:
         print(2)
 
     @allure.step(title='步骤001')
-    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.severity('blocker')
+    # @allure.severity(allure.severity_level.CRITICAL)
     def test_fun1(self):
         allure.attach('描述', '我是测试步骤00333的描述～～～')
         assert 1
