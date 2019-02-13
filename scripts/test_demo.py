@@ -22,7 +22,7 @@ class Test_allure:
         imgfile = open(r'F:\allure_test1\picture1.png','rb').read()
         print(type(imgfile))
         # print(imgfile)
-        allure.attach('成功截图', str(imgfile),allure.attachment_type.PNG)
+        allure.attach('成功截图', imgfile,allure.attach_type.PNG)
         print(4)
         assert 1
 
